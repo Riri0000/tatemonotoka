@@ -1,89 +1,71 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+  <v-carousel hide-delimiters cycle>
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+      class="mt-16"
+    ></v-carousel-item>
+    <v-row>
+      <v-col
+        v-for="(card) in cards"
+        :key="card.index"
+        :cols="card.flex.cols"
+        :sm="card.flex.sm"
+        :md="card.flex.md"
+        class="pa-10"
+      >
+      <a :href="card.redirect_url">
+        <v-hover
+          v-slot:default="{ hover }"
+        >
+          <v-card
+          :elevation="hover ? 16 : 2"
           >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+            <v-img
+              :src="card.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
+            >
+              <v-card-title v-text="card.title"></v-card-title>
+              <v-card-text v-text="card.skill"></v-card-text>
+            </v-img>
+          </v-card>
+        </v-hover>
+      </a>
+      </v-col>
+    </v-row>
+  </v-carousel>
 </template>
-
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
+  export default {
+    data () {
+      return {
+        items: [
+          {
+            src: "/image/hakura2.jpg"
+          },
+          {
+            src: "/image/reki3.jpg"
+          },
+          {
+            src: "/image/kaso1.jpg"
+          },
+          {
+            src: "/image/tiki3.jpg"
+          },
+          {
+            src: "/image/kaso2.jpg"
+          },
+        ],
+        cards: [
+        { title: 'Portfolio1', skill: 'skill1', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6}},
+        { title: 'Portfolio2', skill: 'skill2', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio3', skill: 'skill3', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio4', skill: 'skill4', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6} },
+      ],
+      }
+    },
   }
-}
 </script>
