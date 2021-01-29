@@ -1,27 +1,26 @@
 <template>
-    <div id="profile">
-      <v-container
-      fluid>
-        <v-card
-        width="100vw"
-        class="mt-10"
+  <div id="profile">
+    <v-container
+    fluid>
+      <v-card
+      width="100vw"
+      class="mt-10 pt-5"
+      >
+      <v-card-title
+      class="pa-5 justify-center font-weight-light display-1 mb-15"
+      >
+        About
+      </v-card-title>
+      <v-row
+      justify="center"
+      align-content="center"
+      >
+        <v-col
+          cols="12"
+          sm="5"
+          md="5"
+          align="center"
         >
-        <v-card-title
-        class="pa-5 justify-center display-1 mb-15"
-        >
-          About
-        </v-card-title>
-
-        <v-row
-        justify="center"
-        align-content="center"
-        >
-          <v-col
-            cols="12"
-            sm="5"
-            md="5"
-            align="center"
-          >
           <v-row
           justify="space-around"
           align-content="center"
@@ -38,12 +37,12 @@
           >
           </v-avatar>
           </v-row>
-          </v-col>
-          <v-col
-            cols="12"
-            sm="6"
-            md="6"
-          >
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="6"
+        >
           <v-list>
             <v-card-text class="font-weight-light headline">杉山　由香</v-card-text>
             <v-list-item
@@ -55,15 +54,15 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-          </v-col>
-          <v-col
-            cols="12"
-            sm="8"
-            md="8"
-            align="left"
-          >
+        </v-col>
+        <v-col
+          cols="12"
+          sm="8"
+          md="8"
+          align="left"
+        >
           <v-list>
-            <v-card-text class="font-weight-light headline mb-5">Aword</v-card-text>
+            <v-card-text class="font-weight-light display-1 mb-5">Aword</v-card-text>
             <v-list-item
             v-for="aword in awords"
             :key="aword.content"
@@ -73,11 +72,11 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-          </v-col>
-        </v-row>
-        </v-card>
-      </v-container>
-    </div>
+        </v-col>
+      </v-row>
+      </v-card>
+    </v-container>
+  </div>
 </template>
 <script>
   export default {

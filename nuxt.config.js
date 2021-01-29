@@ -6,18 +6,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - tatemonotoka',
-    title: 'tatemonotoka',
-    htmlAttrs: {
-      lang: 'en'
-    },
+    titleTemplate: '%s - タテモノトカ',
+    title: 'タテモノトカ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'og:type', content: 'website' },
+      { hid: 'og:url', content: 'url' },
+      { hid: 'og:title', content: 'タテモノトカ' },
+      { hid: 'og:site_name', content: 'タテモノトカ' },
+      { hid: 'og:description', content: '杉山由香が運営する設計事務所です。やわらかなものづくりを目指しましています。' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/hakura2.jpg' }
     ]
   },
 

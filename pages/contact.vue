@@ -2,8 +2,8 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <v-card
-        class="mt-10">
-        <v-card-title class="pa-5 justify-center display-1">
+        class="mt-10 pt-5">
+        <v-card-title class="pa-5 justify-center font-weight-light display-1 mb-15">
           Contact
         </v-card-title>
         <v-card-text class="font-weight-light subtitle-1">

@@ -6,31 +6,78 @@
         flat
         app
       >
-        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-        <v-toolbar-title>タテモノトカ</v-toolbar-title>
+        <v-avatar
+          tile
+          size="34"
+        >
+        <img
+          src="/image/logo.jpg"
+          alt="LOGO"
+        >
+        </v-avatar>
+        <nuxt-link class="text-decoration-none" to="/">
+          <v-btn
+            text
+            class="ml-2 font-weight-light"
+            color="black"
+            to="/"
+            nuxt>
+              タテモノトカ
+          </v-btn>
+        </nuxt-link>
+        <v-spacer></v-spacer>
+          <v-toolbar-items class="hidden-sm-and-down mr-10">
+            <v-btn
+              text
+              class="ml-2 font-weight-bold"
+              color="black"
+              to="/works"
+              nuxt>
+                Works
+            </v-btn>
+            <v-btn
+              text
+              class="ml-2 font-weight-bold"
+              color="black"
+              to="/About"
+              nuxt>
+                About
+            </v-btn>
+            <v-btn
+              text
+              class="ml-2 font-weight-bold"
+              color="black"
+              to="/contact"
+              nuxt>
+                Contact
+            </v-btn>
+          </v-toolbar-items>
+        <v-app-bar-nav-icon @click="drawer = true" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
       </v-app-bar>
       <v-navigation-drawer
         v-model="drawer"
+        right
         fixed
-        temporary>
+        temporary
+      >
         <v-list nav>
           <v-list-item-group>
-            <nuxt-link to="/">
+            <nuxt-link class="text-decoration-none" to="/">
               <v-list-item>
                 <v-list-item-title>Home</v-list-item-title>
               </v-list-item>
             </nuxt-link>
-            <nuxt-link to="/works">
+            <nuxt-link class="text-decoration-none" to="/works">
               <v-list-item>
                 <v-list-item-title>Works</v-list-item-title>
               </v-list-item>
             </nuxt-link>
-            <nuxt-link to="/about">
+            <nuxt-link class="text-decoration-none" to="/about">
               <v-list-item>
                 <v-list-item-title>About</v-list-item-title>
               </v-list-item>
             </nuxt-link>
-            <nuxt-link to="/contact">
+            <nuxt-link class="text-decoration-none" to="/contact">
               <v-list-item>
                 <v-list-item-title>Contact</v-list-item-title>
               </v-list-item>
