@@ -62,6 +62,24 @@
           align="left"
         >
           <v-list>
+            <v-card-text class="font-weight-light headline mb-5">タテモノトカ</v-card-text>
+            <v-list-item
+            v-for="address in addresses"
+            :key="address.content"
+            >
+              <v-list-item-content>
+                <v-list-item-title>{{ address.content }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="8"
+          md="8"
+          align="left"
+        >
+          <v-list>
             <v-card-text class="font-weight-light display-1 mb-5">Aword</v-card-text>
             <v-list-item
             v-for="aword in awords"
@@ -82,10 +100,16 @@
   export default {
     data: () => ({
       profiles: [
-        { content: '2014　　　　東京電機大学 卒業'},
-        { content: '2016　　　　東京藝術大学大学院 修了'},
+        { content: '2014　　　　東京電機大学建築学科 卒業'},
+        { content: '2016　　　　東京藝術大学大学院建築科 修了'},
         { content: '2016~19　　伊東豊雄建築設計事務所勤務'},
         { content: '2019　　　　タテモノトカ設立'},
+      ],
+      addresses: [
+        { content: '一級建築士事務所　東京都知事登録第●●号' },
+        { content: '業務内容 :' },
+        { content: '建築・インテリアの企画・設計及び監理'},
+        { content: 'プロダクトやイベントの企画・デザイン'}
       ],
       awords: [
         { content: '2010　サスティナブルデザインアイデアコンペ最優秀賞' },

@@ -15,18 +15,17 @@
           alt="LOGO"
         >
         </v-avatar>
-        <nuxt-link class="text-decoration-none" to="/">
-          <v-btn
-            text
-            class="ml-2 font-weight-light"
-            color="black"
-            to="/"
-            nuxt>
-              タテモノトカ
-          </v-btn>
-        </nuxt-link>
+        <v-toolbar-title class="subtitle-1 ml-3">タテモノトカ</v-toolbar-title>
         <v-spacer></v-spacer>
           <v-toolbar-items class="hidden-sm-and-down mr-10">
+            <v-btn
+              text
+              class="ml-2 font-weight-bold"
+              color="black"
+              to="/"
+              nuxt>
+                TOP
+            </v-btn>
             <v-btn
               text
               class="ml-2 font-weight-bold"
@@ -39,9 +38,17 @@
               text
               class="ml-2 font-weight-bold"
               color="black"
-              to="/About"
+              to="/about"
               nuxt>
                 About
+            </v-btn>
+            <v-btn
+              text
+              class="ml-2 font-weight-bold"
+              color="black"
+              to="/vision"
+              nuxt>
+                vision
             </v-btn>
             <v-btn
               text
@@ -112,3 +119,10 @@ export default {
   }
 }
 </script>
+<style>
+html {
+  font-family: "Source Sans Pro", 游ゴシック体,
+   'Yu Gothic', YuGothic,
+   'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif;
+}
+</style>
