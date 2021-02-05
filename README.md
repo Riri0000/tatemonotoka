@@ -3,7 +3,7 @@
 <br>
 
 ## 使用技術
-NuxtJS * Vuetify
+Nuxt.js * Vuetify
 <br>
 
 ## Build Setup
