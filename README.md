@@ -1,8 +1,10 @@
-# tatemonotoka
+## タテモノトカ
 杉山由香建築事務所「タテモノトカ」のHP
+<br>
 
-# 使用技術
+## 使用技術
 NuxtJS * Vuetify
+<br>
 
 ## Build Setup
 
