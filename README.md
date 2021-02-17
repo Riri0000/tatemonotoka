@@ -1,5 +1,10 @@
-# tatemonotoka
-設計事務所のHP
+## タテモノトカ
+建築事務所「タテモノトカ」のHP
+<br>
+
+## 使用技術
+Nuxt.js * Vuetify
+<br>
 
 ## Build Setup
 
