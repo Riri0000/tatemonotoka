@@ -1,14 +1,42 @@
 <template>
   <div class="mt-16">
-    <v-carousel hide-delimiters cycle class="mb-16">
+    <!-- <v-carousel hide-delimiters cycle class="mb-16">
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
         :src="item.src"
         class="mt-16"
       ></v-carousel-item>
-    </v-carousel>
-    <p class="font-weight-light display-1 text-center mt-16">Works</p>
+    </v-carousel> -->
+    <p class="font-weight-thin headline text-center mt-16 mb-16">場所や人に寄り添う建築</p>
+      <v-col
+      cols="12"
+      sm="12"
+      md="12"
+      align="center"
+      >
+        <v-row
+        justify="space-around"
+        align-content="center"
+        style="height:100%"
+        >
+        <v-avatar
+        tile
+        size="300"
+        >
+        <img
+          src="/image/etigo3.jpg"
+          alt="PROFILE"
+          style="object-fit: cover;"
+        >
+        </v-avatar>
+        <p class="subtitle-1 mb-5 mt-10 p-4 text--primary">
+          タテモノトカは人や場所に寄り添い、物語をあらゆるものから引き出すことで、建築を形作っていきます。<br>
+          タテモノトカと一緒にたてものとか、いろんなものを作ってみませんか。
+        </p>
+        </v-row>
+      </v-col>
+    <p class="font-weight-thin display-1 text-center mt-16">Works</p>
     <v-row text-align: center>
       <v-col
         v-for="(card) in cards"
@@ -52,19 +80,19 @@
       return {
         items: [
           {
-            src: "/image/hakura2.jpg"
+            src: "/image/top1.jpg"
           },
           {
-            src: "/image/reki3.jpg"
+            src: "/image/top2.jpg"
           },
           {
-            src: "/image/kaso1.jpg"
+            src: "/image/top3.jpg"
           },
           {
-            src: "/image/tiki3.jpg"
+            src: "/image/top4.jpg"
           },
           {
-            src: "/image/kaso2.jpg"
+            src: "/image/top5.jpg"
           },
         ],
         cards: [

@@ -71,7 +71,7 @@
           <v-list-item-group>
             <nuxt-link class="text-decoration-none" to="/">
               <v-list-item>
-                <v-list-item-title>Home</v-list-item-title>
+                <v-list-item-title>TOP</v-list-item-title>
               </v-list-item>
             </nuxt-link>
             <nuxt-link class="text-decoration-none" to="/works">
@@ -82,6 +82,11 @@
             <nuxt-link class="text-decoration-none" to="/about">
               <v-list-item>
                 <v-list-item-title>About</v-list-item-title>
+              </v-list-item>
+            </nuxt-link>
+            <nuxt-link class="text-decoration-none" to="/vision">
+              <v-list-item>
+                <v-list-item-title>Vision</v-list-item-title>
               </v-list-item>
             </nuxt-link>
             <nuxt-link class="text-decoration-none" to="/contact">
