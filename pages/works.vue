@@ -43,6 +43,9 @@
 </template>
 <script>
   export default {
+    head: () =>({
+      title: 'WORKS'
+    }),
     data: () => ({
       cards: [
         { title: 'Portfolio1', skill: 'skill1', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6}},

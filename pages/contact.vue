@@ -21,9 +21,12 @@
 </template>
 <script>
 export default {
+    head: () =>({
+        title: 'CONTACT'
+    }),
     data: () => ({
               src:
-      "https://docs.google.com/forms/d/e/1FAIpQLScx885SVE0zUk9MfB5XMau3x3ynnBCIcqst4VVXJzhbHp2YAA/viewform?embedded=true"
+      "https://docs.google.com/forms/d/1tIt9Y69ha68cCT7IYrMuX0lp9gydAecSl564rhLjA48/edit"
     }),
 
 };

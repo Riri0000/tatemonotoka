@@ -44,7 +44,7 @@
           md="6"
         >
           <v-list>
-            <v-card-text class="font-weight-light headline">杉山　由香</v-card-text>
+            <v-card-text class="font-weight-light headline">杉山 由香</v-card-text>
             <v-list-item
             v-for="profile in profiles"
             :key="profile.content"
@@ -98,6 +98,11 @@
 </template>
 <script>
   export default {
+    head() {
+      return {
+        title: 'ABOUT'
+      }
+    },
     data: () => ({
       profiles: [
         { content: '2014　　　　東京電機大学建築学科 卒業'},

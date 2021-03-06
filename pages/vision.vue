@@ -62,6 +62,9 @@
 </template>
 <script>
   export default {
+    head: () =>({
+      title: 'VISION'
+    }),
     data: () => ({
 
     }),

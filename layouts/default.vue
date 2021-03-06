@@ -20,7 +20,7 @@
           <v-toolbar-items class="hidden-sm-and-down mr-10">
             <v-btn
               text
-              class="ml-2 font-weight-bold"
+              class="ml-2"
               color="black"
               to="/"
               nuxt>
@@ -28,7 +28,7 @@
             </v-btn>
             <v-btn
               text
-              class="ml-2 font-weight-bold"
+              class="ml-2"
               color="black"
               to="/works"
               nuxt>
@@ -36,7 +36,7 @@
             </v-btn>
             <v-btn
               text
-              class="ml-2 font-weight-bold"
+              class="ml-2"
               color="black"
               to="/about"
               nuxt>
@@ -44,7 +44,7 @@
             </v-btn>
             <v-btn
               text
-              class="ml-2 font-weight-bold"
+              class="ml-2"
               color="black"
               to="/vision"
               nuxt>
@@ -52,7 +52,7 @@
             </v-btn>
             <v-btn
               text
-              class="ml-2 font-weight-bold"
+              class="ml-2"
               color="black"
               to="/contact"
               nuxt>

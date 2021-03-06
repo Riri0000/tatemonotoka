@@ -1,5 +1,6 @@
 <template>
   <div class="mt-16">
+    <!-- スライダー部分はいったん保留 -->
     <!-- <v-carousel hide-delimiters cycle class="mb-16">
       <v-carousel-item
         v-for="(item,i) in items"
@@ -8,13 +9,6 @@
         class="mt-16"
       ></v-carousel-item>
     </v-carousel> -->
-    <p class="font-weight-thin headline text-center mt-16 mb-16">場所や人に寄り添う建築</p>
-      <v-col
-      cols="12"
-      sm="12"
-      md="12"
-      align="center"
-      >
         <v-row
         justify="space-around"
         align-content="center"
@@ -36,7 +30,7 @@
         </p>
         </v-row>
       </v-col>
-    <p class="font-weight-thin display-1 text-center mt-16">Works</p>
+    <p class="display-1 text-center mt-16 font-weight-light">Works</p>
     <v-row text-align: center>
       <v-col
         v-for="(card) in cards"
@@ -76,6 +70,11 @@
 </template>
 <script>
   export default {
+    head() {
+      return {
+        title: 'TOP'
+      }
+    },
     data () {
       return {
         items: [
