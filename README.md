@@ -1,5 +1,6 @@
 ## タテモノトカ
 建築事務所「タテモノトカ」のHP
+https://tatemonotoka.netlify.app/
 <br>
 
 ## 使用技術

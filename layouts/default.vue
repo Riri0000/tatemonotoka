@@ -106,10 +106,42 @@
     <v-footer
       :absolute="!fixed"
       app
+      color="grey lighten-2"
+    >
+      <v-card
+        flat
+        tile
+        width="100%"
+        class="text-center"
+        color="grey lighten-2"
+      >
+        <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon.icon"
+            :href="icon.link"
+            class="mx-4"
+            icon
+          >
+            <v-icon size="24px">{{ icon.icon }}</v-icon>
+          </v-btn>
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-text>
+          {{ new Date().getFullYear() }} — <strong>&copy;タテモノトカ</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
+
+    <!-- <v-footer
+      :absolute="!fixed"
+      app
       class="font-weight-light"
     >
       <span>&copy; {{ new Date().getFullYear() }} タテモノトカ</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 
@@ -119,7 +151,12 @@ export default {
     return {
       drawer: false,
       fixed: false,
-      title: 'タテモノトカ'
+      title: 'タテモノトカ',
+      icons: [
+        { icon: 'mdi-instagram', link: "https://www.instagram.com/sugitoka/" },
+        { icon: 'mdi-facebook', link: "https://www.facebook.com/yuka.sugiyama.1829" },
+        { icon: 'mdi-twitter', link: "https://twitter.com/z9lt6zjdnhaoydt"},
+      ],
     }
   }
 }
