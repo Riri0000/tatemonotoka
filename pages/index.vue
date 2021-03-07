@@ -1,20 +1,20 @@
 <template>
   <div class="mt-16">
     <!-- スライダー部分はいったん保留 -->
-    <!-- <v-carousel hide-delimiters cycle class="mb-16">
+    <v-carousel hide-delimiters cycle class="mb-16">
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
         :src="item.src"
         class="mt-16"
       ></v-carousel-item>
-    </v-carousel> -->
+    </v-carousel>
         <v-row
         justify="space-around"
         align-content="center"
         style="height:100%"
         >
-        <v-avatar
+        <!-- <v-avatar
         tile
         size="300"
         >
@@ -23,7 +23,7 @@
           alt="PROFILE"
           style="object-fit: cover;"
         >
-        </v-avatar>
+        </v-avatar> -->
         <p class="subtitle-1 mb-5 mt-10 p-4 text--primary">
           タテモノトカは人や場所に寄り添い、物語をあらゆるものから引き出すことで、建築を形作っていきます。<br>
           タテモノトカと一緒にたてものとか、いろんなものを作ってみませんか。
