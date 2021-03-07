@@ -1,36 +1,29 @@
 <template>
   <div class="mt-16">
-    <!-- スライダー部分はいったん保留 -->
+    <!-- スライダー部分 -->
     <v-carousel hide-delimiters cycle class="mb-16">
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
         :src="item.src"
         class="mt-16"
+        reverse-transition="fade-transition"
+        transition="fade-transition"
       ></v-carousel-item>
     </v-carousel>
-        <v-row
-        justify="space-around"
-        align-content="center"
-        style="height:100%"
-        >
-        <!-- <v-avatar
-        tile
-        size="300"
-        >
-        <img
-          src="/image/etigo3.jpg"
-          alt="PROFILE"
-          style="object-fit: cover;"
-        >
-        </v-avatar> -->
-        <p class="subtitle-1 mb-5 mt-10 p-4 text--primary">
-          タテモノトカは人や場所に寄り添い、物語をあらゆるものから引き出すことで、建築を形作っていきます。<br>
-          タテモノトカと一緒にたてものとか、いろんなものを作ってみませんか。
-        </p>
-        </v-row>
-      </v-col>
-    <p class="display-1 text-center mt-16 font-weight-light">Works</p>
+    <v-row
+    justify="space-around"
+    align-content="center"
+    style="height:100%"
+    >
+    <p class="subtitle-1 mb-5 mt-10 text--primary px-5">
+      タテモノトカは人や場所に寄り添い、物語をあらゆるものから引き出すことで、建築を形作っていきます。
+    </p>
+    <p class="subtitle-1 mb-5 text--primary px-5">
+      タテモノトカと一緒にたてものとか、いろんなものを作ってみませんか。
+    </p>
+    </v-row>
+    <p class="display-1 text-center mt-16 font-weight-light grey--text text--darken-1">Works</p>
     <v-row text-align: center>
       <v-col
         v-for="(card) in cards"

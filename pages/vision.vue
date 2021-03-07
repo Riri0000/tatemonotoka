@@ -2,15 +2,7 @@
   <div id="vision">
     <v-container
     fluid>
-      <v-card
-      width="100vw"
-      class="mt-10 pt-5"
-      >
-      <v-card-title
-      class="pa-5 justify-center font-weight-thin headline mb-15 mt-10"
-      >
-        場所や人に寄り添う建築
-      </v-card-title>
+      <p class="display-1 text-center mt-16 font-weight-light mb-16 grey--text text--darken-1">Vision</p>
       <v-row
       justify="center"
       align-content="center"
@@ -40,8 +32,8 @@
         </v-col>
         <v-col
           cols="12"
-          sm="10"
-          md="10"
+          sm="11"
+          md="11"
         >
           <p class="subtitle-1 mb-5 mt-10 p-4 text--primary">
             住人の小さな記憶や物語を積み重ねていけたら素晴らしい街が醸成されていくのではないでしょうか。<br>
@@ -56,7 +48,6 @@
           </p>
         </v-col>
       </v-row>
-      </v-card>
     </v-container>
   </div>
 </template>

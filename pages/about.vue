@@ -2,15 +2,7 @@
   <div id="profile">
     <v-container
     fluid>
-      <v-card
-      width="100vw"
-      class="mt-10 pt-5"
-      >
-      <v-card-title
-      class="pa-5 justify-center font-weight-light display-1 mb-15"
-      >
-        About
-      </v-card-title>
+      <p class="display-1 text-center mt-16 font-weight-light mb-16 grey--text text--darken-1">About</p>
       <v-row
       justify="center"
       align-content="center"
@@ -50,49 +42,48 @@
             :key="profile.content"
             >
               <v-list-item-content>
-                <v-list-item-title>{{ profile.content }}</v-list-item-title>
+                <v-list-item-title class="text-wrap">{{ profile.content }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-col>
         <v-col
           cols="12"
-          sm="8"
-          md="8"
+          sm="11"
+          md="11"
           align="left"
         >
           <v-list>
-            <v-card-text class="font-weight-light headline mb-5">タテモノトカ</v-card-text>
+            <v-card-text class="font-weight-light headline mb-5 grey--text text--darken-1">タテモノトカ</v-card-text>
             <v-list-item
             v-for="address in addresses"
             :key="address.content"
             >
               <v-list-item-content>
-                <v-list-item-title>{{ address.content }}</v-list-item-title>
+                <v-list-item-title class="text-wrap">{{ address.content }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-col>
         <v-col
           cols="12"
-          sm="8"
-          md="8"
+          sm="11"
+          md="11"
           align="left"
         >
           <v-list>
-            <v-card-text class="font-weight-light display-1 mb-5">Aword</v-card-text>
+            <v-card-text class="font-weight-light display-1 mb-5 grey--text text--darken-1">Aword</v-card-text>
             <v-list-item
             v-for="aword in awords"
             :key="aword.content"
             >
               <v-list-item-content>
-                <v-list-item-title>{{ aword.content }}</v-list-item-title>
+                <v-list-item-title class="text-wrap">{{ aword.content }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-col>
       </v-row>
-      </v-card>
     </v-container>
   </div>
 </template>
@@ -105,10 +96,10 @@
     },
     data: () => ({
       profiles: [
-        { content: '2014　　　　東京電機大学建築学科 卒業'},
-        { content: '2016　　　　東京藝術大学大学院建築科 修了'},
-        { content: '2016~19　　伊東豊雄建築設計事務所勤務'},
-        { content: '2019　　　　タテモノトカ設立'},
+        { content: '2014　東京電機大学建築学科卒業'},
+        { content: '2016　東京藝術大学大学院建築科修了'},
+        { content: '2016-19　伊東豊雄建築設計事務所勤務'},
+        { content: '2019　タテモノトカ設立'},
       ],
       addresses: [
         { content: '一級建築士事務所　東京都知事登録第●●号' },
@@ -132,3 +123,10 @@
     }),
   }
 </script>
+<style lang="css">
+  .v-list-item {
+    text-overflow: inherit;
+    white-space: unset;
+  }
+</style>
+
