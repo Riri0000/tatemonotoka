@@ -27,8 +27,7 @@
                 <v-img
                   :src="card.src"
                   class="white--text align-end"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                  height="200px"
+                  height="300px"
                 >
                   <v-card-title v-text="card.title"></v-card-title>
                   <v-card-text v-text="card.skill"></v-card-text>
@@ -48,10 +47,14 @@
     }),
     data: () => ({
       cards: [
-        { title: 'Portfolio1', skill: 'skill1', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6}},
-        { title: 'Portfolio2', skill: 'skill2', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6} },
-        { title: 'Portfolio3', skill: 'skill3', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6} },
-        { title: 'Portfolio4', skill: 'skill4', src: 'https://placeimg.com/640/480/any', redirect_url: '#' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio1', skill: 'skill1', src: '/image/kozu1.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio2', skill: 'skill2', src: '/image/kozu2.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio3', skill: 'skill3', src: '/image/kozu3.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio4', skill: 'skill4', src: '/image/tori1.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio4', skill: 'skill4', src: '/image/outi2.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio4', skill: 'skill4', src: '/image/kozu1.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio4', skill: 'skill4', src: '/image/outi3.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
+        { title: 'Portfolio4', skill: 'skill4', src: '/image/tori3.jpg' ,flex: {cols: 12, sm: 6, md: 6} },
       ],
     }),
   }
